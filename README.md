@@ -28,7 +28,7 @@ Experimente mudar o número de vistas e linhas para obter outros resultados.
 ### 2) método ART
 
 Muito usado em vários campos de processamento de imagens, este método nada mais é do que a resolução de um sistema linear passo a passo.
-Temos um sistema linear onde as incógnitas são a densidade `x[i][j]` em cada ponto da imagem, as equações são criadas apartir das integrais `p[i]` em cada linha de scan, e os coeficientes são o tamanho da intersecção da reta com o ponto `(i,j)` da imagem   (w[i][j])`.
+Temos um sistema linear onde as incógnitas são a densidade `x[i][j]` em cada ponto da imagem, as equações são criadas apartir das integrais `p[i]` em cada linha de scan, e os coeficientes são o tamanho da intersecção da reta com o ponto `(i,j)` da imagem   (`w[i][j]`).
 
 ```
 w[1][1]*x[1][1] + w[1][2]x[1][2] = p[1]
