@@ -27,13 +27,30 @@ Experimente mudar o número de vistas e linhas para obter outros resultados.
 
 ### 2) método ART
 
-### 3) ART usando wij=1
+Muito usado em vários campos de processamento de imagens, este método nada mais é do que a resolução de um sistema linear passo a passo.
+Temos um sistema linear onde as incógnitas são a densidade `x[i][j]` em cada ponto da imagem, as equações são criadas apartir das integrais `p[i]` em cada linha de scan, e os coeficientes são o tamanho da intersecção da reta com o ponto `(i,j)` da imagem   (w[i][j])`.
+
+```
+w[1][1]*x[1][1] + w[1][2]x[1][2] = p[1]
+w[2][1]*x[2][1] + w[2][2]x[2][2] = p[2]
+```
+
+Como em geral estes sistemas lineares são gigantescos, utiliza-se uma resolução iterativa projetando-se a solução em cada passo no espaço de soluções gerado pelas equações do sistema (metódo de Kaczmarz).
+Experimente mudar o número de vistas e linhas para obter outros resultados.
+
+### 3) ART usando `wij=1`
 
 ### 4) método ART (raios divergentes)
 
+Este é o ART, mas aqui a geometria de coleta de dados é a divergente, atualmente mas usada em máquinas de CT pela velocidade que que se consegue completar o scan.
+
 ### 5) retroprojeção
 
+Aqui fazemos apenas a inversão da transformada de Radon.
+
 ### 6) Convolução/Retroprojeção
+
+Este é o mais usado, e o que garante melhores resultados dos métodos de CT. Baseia-se na inversão da transformada de Radon com a utilização de um filtro no Espaço de Fourier.
 
 
 ## Bibliografia
