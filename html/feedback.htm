@@ -1,0 +1,39 @@
+<HTML>
+<HEAD><TITLE>Contact Us</TITLE></HEAD>
+<BODY bgcolor=white text=black link=black vlink=black alink=black>
+
+<CENTER>
+<FONT SIZE=6 COLOR=#996633><B>Contact Us</B></FONT><P>
+</CENTER>
+If you have any questions or suggestions or if you are interested 
+in learning more about Sambar Technologies, enter your comments here.
+You can use this form for technical support questions, or send email
+to <A HREF="mailto:tod@sambar.com">tod@sambar.com</A>.
+<P>
+PLEASE change the recipient of the form below if you are testing
+the sendmail APIs.  I am receiving far too many garbage mail messages. 
+<P>
+<FORM ACTION="/session/sendmail" METHOD=POST>
+<INPUT TYPE=hidden NAME="recipient" VALUE="tod@sambar.com">
+<INPUT TYPE=hidden NAME="RCpage" VALUE = "thanks.htm">
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=5 WIDTH=500>
+<TR>
+<TD ALIGN=right>Your Email: </TD>
+<TD><INPUT TYPE="text" NAME="email" VALUE="" SIZE=40 MAXLENGTH=40></TD>
+</TR>
+<TR>
+<TD ALIGN=right>Subject: </TD>
+<TD><INPUT TYPE="text" NAME="subject" VALUE="" SIZE=40 MAXLENGTH=40></TD>
+</TR>
+<TR>
+<TD Valign=top ALIGN=right>Message: </TD>
+<TD><TEXTAREA NAME="message" ROWS=6 COLS=34></TEXTAREA></TD>
+</TR>
+<TR>
+<TD></TD>
+<TD><INPUT TYPE=submit VALUE="Submit"></TD>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
